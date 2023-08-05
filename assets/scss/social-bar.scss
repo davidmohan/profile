@@ -1,0 +1,14 @@
+.social-bar-animation {
+  // animation-name: SocialBar;
+  // animation-duration: 2000ms;
+  animation: SocialBar 1.3s ease;
+}
+
+@keyframes SocialBar {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(1);
+  }
+}

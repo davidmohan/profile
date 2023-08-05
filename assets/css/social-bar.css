@@ -1,0 +1,12 @@
+.social-bar-animation {
+  animation: SocialBar 1.3s ease;
+}
+
+@keyframes SocialBar {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(1);
+  }
+}
