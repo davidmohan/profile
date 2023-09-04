@@ -1,0 +1,35 @@
+.project {
+  &--img {
+    transition: all 300ms;
+    position: relative;
+    // z-index: 20;
+    cursor: pointer;
+
+    img {
+      border-radius: 20px;
+    }
+    // overflow: hidden;
+  }
+  &--about {
+    text-align: justify;
+    text-indent: 3rem;
+  }
+  &--img:hover {
+    transition: all 300ms;
+    & {
+      margin-left: 10px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      left: -5px;
+      border-radius: 20px;
+      top: -5px;
+      transition: all 300ms ease;
+    }
+  }
+}

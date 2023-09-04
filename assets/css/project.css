@@ -1,0 +1,30 @@
+.project--img {
+  transition: all 300ms;
+  position: relative;
+  cursor: pointer;
+}
+.project--img img {
+  border-radius: 20px;
+}
+.project--about {
+  text-align: justify;
+  text-indent: 3rem;
+}
+.project--img:hover {
+  transition: all 300ms;
+}
+.project--img:hover {
+  margin-left: 10px;
+}
+.project--img:hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  left: -5px;
+  border-radius: 20px;
+  top: -5px;
+  transition: all 300ms ease;
+}

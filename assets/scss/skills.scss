@@ -1,0 +1,30 @@
+.skill {
+  position: relative;
+  cursor: pointer;
+
+  &--skill {
+    transition: 300ms;
+  }
+
+  &--percentage {
+    transition: 300ms;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: #0dcaf0;
+  }
+
+  &:hover {
+    border-color: #0dcaf0 !important;
+  }
+
+  &:hover > &--skill {
+    opacity: 0;
+  }
+
+  &:hover > &--percentage {
+    opacity: 1;
+  }
+}

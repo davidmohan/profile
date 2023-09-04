@@ -2,7 +2,7 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  animation: Ring0 1.5s ease;
+  animation: Ring0 1.5s ease infinite;
 }
 
 @keyframes Ring0 {
@@ -46,7 +46,6 @@
 }
 .profile-bg--img {
   width: 100%;
-  transform: scale(3.5) translateY(12%);
 }
 
 .intro-title {
